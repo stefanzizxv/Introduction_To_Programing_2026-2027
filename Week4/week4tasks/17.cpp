@@ -18,18 +18,18 @@ int getLength(int number){
 int sumDigits(int& number){
     
     
-while(number >= 10){
+    while(number >= 10){
 
-    int sum = 0;
-        while (number > 0){
-        
-            sum+=number % 10;
-            number /= 10;
+        int sum = 0;
+            while (number > 0){
             
-        }
-        number = sum;
-}    
-    return number;
+                sum+=number % 10;
+                number /= 10;
+                
+            }
+            number = sum;
+    }    
+        return number;
 }
 
 int main(){
